@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frisian / Farisan — Experimental Security-Focused Programming Language & Runtime Documentation by Mamidi Nitesh.">
+  <title>Language Development (Frisian / Farisan) | NITHESH.DEV</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="bg-grid-pattern">
+
+  <div class="system-bar">
+    <div class="container system-bar-inner">
+      <div class="sys-status">
+        <span class="status-dot pulse"></span>
+        <span class="mono-text">SYS.NODE // NITHESH.DEV [LANG_DEV: FRISIAN / FARISAN]</span>
+      </div>
+      <div class="sys-meta mono-text">
+        <span>STATUS: EXPERIMENTAL RESEARCH &amp; SPECIFICATION</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-bracket">[</span>NITHESH<span class="logo-accent">.DEV</span><span class="logo-bracket">]</span>
+      </a>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="about.html" class="nav-link">ABOUT</a></li>
+          <li><a href="resume.html" class="nav-link">RESUME</a></li>
+          <li><a href="projects.html" class="nav-link">PROJECTS</a></li>
+          <li><a href="research.html" class="nav-link">RESEARCH LAB</a></li>
+          <li><a href="ai-systems.html" class="nav-link">AI &amp; SYSTEMS</a></li>
+          <li><a href="language-development.html" class="nav-link active">LANGUAGE DEV</a></li>
+          <li><a href="skills.html" class="nav-link">SKILLS</a></li>
+          <li><a href="contact.html" class="nav-link nav-cta">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow-badge mono-text">
+          <span class="badge-prefix">// EXPERIMENTAL LANGUAGE &amp; RUNTIME INITIATIVE</span>
+        </div>
+        <h1 class="page-title">Frisian / Farisan Programming Language</h1>
+        <p class="page-subtitle">An experimental, security-focused programming language and policy runtime exploring first-class API security, infrastructure verification, and safe execution boundaries.</p>
+        <div class="hero-actions mt-24">
+          <a href="https://github.com/nithesh3-code" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>GitHub Repository &nearr;</span>
+          </a>
+          <a href="#syntax-concepts" class="btn btn-outline">
+            <span>Inspect Syntax Concepts</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- Research Disclaimer Banner -->
+        <div class="notice-banner mono-text mb-32">
+          <strong>[RESEARCH &amp; SPECIFICATION NOTICE]:</strong> Frisian / Farisan is an active, independent language design and research project. All syntax samples, compiler phases, and runtime behaviors documented on this page represent <strong>planned specifications, conceptual designs, or ongoing research prototypes</strong> until explicitly marked as implemented in the version history.
+        </div>
+
+        <div class="lang-doc-grid">
+          <!-- Sidebar Table of Contents -->
+          <aside class="doc-sidebar">
+            <div class="panel-card sticky-panel">
+              <h4 class="mono-text panel-subtitle">// SPECIFICATION INDEX</h4>
+              <ul class="doc-nav-list mono-text">
+                <li><a href="#introduction">01. Language Introduction</a></li>
+                <li><a href="#motivation">02. Core Motivation</a></li>
+                <li><a href="#design-principles">03. Design &amp; API Security</a></li>
+                <li><a href="#syntax-concepts">04. Planned Syntax Concepts</a></li>
+                <li><a href="#compiler-arch">05. Compiler &amp; Parser</a></li>
+                <li><a href="#runtime-arch">06. Runtime Architecture</a></li>
+                <li><a href="#roadmap">07. Roadmap &amp; Versions</a></li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- Main Documentation Content -->
+          <div class="doc-content">
+
+            <article id="introduction" class="panel-card mb-24">
+              <span class="mono-text cyan-text">01 // OVERVIEW</span>
+              <h2 class="panel-title">Language Introduction</h2>
+              <p>
+                <strong>Frisian / Farisan</strong> is an experimental programming language and security policy project initiated by Mamidi Nitesh. It investigates how security constraints—such as API authentication requirements, data sanitization rules, network egress boundaries, and autonomous AI agent permissions—can be treated as intrinsic language constructs rather than fragile afterthought middleware.
+              </p>
+            </article>
+
+            <article id="motivation" class="panel-card mb-24">
+              <span class="mono-text cyan-text">02 // PROBLEM STATEMENT</span>
+              <h2 class="panel-title">Motivation</h2>
+              <p>
+                In conventional backend and AI infrastructure development, security policies are scattered across framework decorators, reverse-proxy configs, and environment variables. A single missing decorator can expose sensitive endpoints or allow an AI agent to execute unauthorized tool calls.
+              </p>
+              <p>
+                Frisian / Farisan explores whether shifting security policy declarations directly into the language grammar and static analyzer can catch misconfigurations before deployment.
+              </p>
+            </article>
+
+            <article id="design-principles" class="panel-card mb-24">
+              <span class="mono-text cyan-text">03 // CORE PILLARS</span>
+              <h2 class="panel-title">Language Design &amp; API Security Principles (Planned / Research)</h2>
+              <div class="focus-grid">
+                <div class="focus-item">
+                  <h4>Secure-by-Default Declarations</h4>
+                  <p>Endpoints, external network calls, and file operations require explicit capability declarations in the planned specification.</p>
+                </div>
+                <div class="focus-item">
+                  <h4>First-Class API Contracts</h4>
+                  <p>Native syntax constructs for defining rate limits, token scopes, and schema validation rules alongside route handlers.</p>
+                </div>
+                <div class="focus-item">
+                  <h4>Deterministic Policy Analysis</h4>
+                  <p>Designed so the parser and static checker can audit permissions and generate a security manifest directly from source files.</p>
+                </div>
+                <div class="focus-item">
+                  <h4>AI Agent Sandbox Rules</h4>
+                  <p>Exploring syntax constructs to bound what external tools or APIs an autonomous LLM workflow is permitted to invoke.</p>
+                </div>
+              </div>
+            </article>
+
+            <article id="syntax-concepts" class="panel-card mb-24">
+              <span class="mono-text cyan-text">04 // DRAFT GRAMMAR</span>
+              <h2 class="panel-title">Syntax Concepts &amp; Code Examples (Conceptual Draft)</h2>
+              <p class="small-text">
+                Below is an <strong>editable conceptual draft</strong> illustrating how Frisian / Farisan explores expressing security policies and API contracts. Edit this block as your grammar evolves:
+              </p>
+              <pre class="code-block mono-text"><code>// [CONCEPTUAL SYNTAX DRAFT — PLANNED SPECIFICATION]
+// File: api_gateway.frs
+
+policy StrictAuth {
+    require_header: "Authorization"
+    scheme: "Bearer"
+    rate_limit: 60 per minute
+}
+
+capability NetworkEgress {
+    allow_hosts: ["api.internal.service"]
+    deny_all_other: true
+}
+
+endpoint "/api/v1/analyze" uses StrictAuth, NetworkEgress {
+    input payload: JsonSchema("ResumePayload")
+
+    execute {
+        // Planned runtime enforces StrictAuth prior to entry
+        // and restricts outbound calls to allow_hosts
+        sanitize(payload)
+        return dispatch_analysis(payload)
+    }
+}</code></pre>
+            </article>
+
+            <article id="compiler-arch" class="panel-card mb-24">
+              <span class="mono-text cyan-text">05 // TOOLCHAIN PIPELINE</span>
+              <h2 class="panel-title">Compiler &amp; Parser Architecture (Research Blueprint)</h2>
+              <p>The planned toolchain architecture is divided into modular stages to support both static policy verification and runtime execution:</p>
+              <pre class="arch-diagram mono-text">
+[Source Code (.frs)]
+        |
+        v
++---------------------------------------------------+
+| 1. LEXER / TOKENIZER                              |
+|    Converts source characters into lexical tokens |
++---------------------------------------------------+
+        |
+        v
++---------------------------------------------------+
+| 2. PARSER &amp; AST GENERATOR                         |
+|    Builds Abstract Syntax Tree (Policy + Logic)   |
++---------------------------------------------------+
+        |
+        v
++---------------------------------------------------+
+| 3. STATIC SECURITY POLICY ANALYZER (Planned)      |
+|    Verifies capability grants &amp; API constraints   |
++---------------------------------------------------+
+        |
+        v
++---------------------------------------------------+
+| 4. INTERPRETER / RUNTIME DISPATCHER (Planned)     |
++---------------------------------------------------+</pre>
+            </article>
+
+            <article id="runtime-arch" class="panel-card mb-24">
+              <span class="mono-text cyan-text">06 // EXECUTION MODEL</span>
+              <h2 class="panel-title">Runtime Architecture &amp; Research Documentation</h2>
+              <p class="placeholder-box mono-text">
+                [EDITABLE SPECIFICATION PLACEHOLDER]: Document memory management, host-language bindings (e.g., Python/Rust/C++ host runtime), and policy enforcement hooks here as implementation progresses.
+              </p>
+            </article>
+
+            <article id="roadmap" class="panel-card">
+              <span class="mono-text cyan-text">07 // MILESTONES &amp; LOGS</span>
+              <h2 class="panel-title">Development Roadmap &amp; Version History</h2>
+
+              <div class="timeline-log mt-16">
+                <div class="log-item">
+                  <div class="log-meta mono-text">
+                    <span class="log-badge">PHASE 1 — CURRENT</span>
+                    <span>[RESEARCH &amp; SPECIFICATION]</span>
+                  </div>
+                  <h4>v0.1.0-alpha (Concept &amp; Grammar Definition)</h4>
+                  <p>Defining core language motivation, lexical token types, security policy grammar concepts, and open-source documentation portal.</p>
+                </div>
+
+                <div class="log-item">
+                  <div class="log-meta mono-text">
+                    <span class="log-badge">PHASE 2 — PLANNED</span>
+                    <span>[LEXER &amp; PARSER PROTOTYPE]</span>
+                  </div>
+                  <h4>v0.2.0 (Planned Milestone)</h4>
+                  <p>Implementation of the initial tokenizer, recursive-descent parser, and Abstract Syntax Tree (AST) representation for policy blocks.</p>
+                </div>
+
+                <div class="log-item">
+                  <div class="log-meta mono-text">
+                    <span class="log-badge">PHASE 3 — PLANNED</span>
+                    <span>[STATIC ANALYZER &amp; RUNTIME]</span>
+                  </div>
+                  <h4>v0.3.0+ (Planned Milestone)</h4>
+                  <p>Static verification engine for API security policies and prototype runtime evaluation.</p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom mono-text">
+      <span>&copy; <span id="current-year">2026</span> Mamidi Nitesh // NITHESH.DEV</span>
+      <span>FRISIAN / FARISAN LANGUAGE DOCUMENTATION</span>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

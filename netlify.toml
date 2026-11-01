@@ -1,0 +1,39 @@
+# ==========================================================================
+# NITHESH.DEV — NETLIFY STATIC DEPLOYMENT CONFIGURATION (netlify.toml)
+# Author: Mamidi Nitesh
+# ==========================================================================
+
+[build]
+  publish = "."
+  command = "echo 'NITHESH.DEV static architecture — no build step required'"
+
+# Custom 404 Fallback Route
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Security & Performance Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Long-term caching for static CSS, JS, and Icon assets
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

@@ -1,0 +1,169 @@
+{
+  "projects": [
+    {
+      "id": "resume-analyzer",
+      "name": "Resume Analyzer",
+      "category": "AI & ML",
+      "featured": true,
+      "status": "Completed / Active Prototype",
+      "shortDescription": "AI-driven resume intelligence and evaluation system designed to parse candidate resumes and evaluate alignment against target software and AI roles.",
+      "problemStatement": "Recruiters and candidates struggle with manual resume screening and opaque ATS keyword matching, making it difficult to objectively assess technical skill alignment.",
+      "proposedSolution": "An automated backend analysis service built with Python and FastAPI that extracts structured sections from resumes, compares skills against role requirements, and generates actionable evaluation feedback.",
+      "techStack": ["Python", "FastAPI", "NLP", "LLMs", "REST APIs", "JSON"],
+      "architecture": "Client Upload -> FastAPI Ingestion Endpoint -> Document Text Extractor -> NLP/LLM Evaluation Pipeline -> Structured JSON Assessment Report.",
+      "features": [
+        "Automated extraction of education, skills, and project experience from PDF/text resumes",
+        "Structured REST API endpoint design using FastAPI and Pydantic schemas",
+        "Role-alignment evaluation and missing-skill identification",
+        "[EDITABLE PLACEHOLDER]: Add additional custom scoring metrics or UI details"
+      ],
+      "screenshots": [
+        "assets/images/projects/resume-analyzer-placeholder.png"
+      ],
+      "githubUrl": "https://github.com/nithesh3-code",
+      "liveDemoUrl": "#",
+      "documentationPath": "projects/project-details/resume-analyzer.md"
+    },
+    {
+      "id": "local-rag-chatbot",
+      "name": "Local RAG Chatbot",
+      "category": "AI & ML",
+      "featured": true,
+      "status": "Active Prototype",
+      "shortDescription": "Retrieval-Augmented Generation (RAG) conversational system engineered to query local technical documents and knowledge bases with grounded context.",
+      "problemStatement": "Standard LLM interactions suffer from hallucinations and lack access to private, local engineering documentation without sending sensitive files to third-party servers.",
+      "proposedSolution": "A modular local RAG pipeline that ingests custom documents, splits text into semantic chunks, indexes vector embeddings, and retrieves top-k relevant passages to ground LLM responses.",
+      "techStack": ["Python", "RAG", "LLMs", "Vector Databases", "FastAPI"],
+      "architecture": "Document Loader -> Semantic Text Chunker -> Embedding Model -> Local Vector Store -> Context Retriever -> LLM Response Generator.",
+      "features": [
+        "Local document ingestion and configurable chunk size/overlap",
+        "Vector similarity search for high-precision context retrieval",
+        "Grounded prompt synthesis to minimize hallucinated answers",
+        "[EDITABLE PLACEHOLDER]: Specify exact embedding model and vector store used"
+      ],
+      "screenshots": [
+        "assets/images/projects/local-rag-placeholder.png"
+      ],
+      "githubUrl": "https://github.com/nithesh3-code",
+      "liveDemoUrl": "#",
+      "documentationPath": "projects/project-details/local-rag-chatbot.md"
+    },
+    {
+      "id": "archon-android-ai",
+      "name": "ARCHON — Android AI Assistant",
+      "category": "Android & AI",
+      "featured": true,
+      "status": "In Development",
+      "shortDescription": "Voice-first native Android AI assistant featuring custom interface state animations, intelligent command routing, and system-level task execution.",
+      "problemStatement": "Conventional mobile assistants often lack customizable developer workflows, transparent command routing, and modern low-latency visual feedback.",
+      "proposedSolution": "A dedicated Android AI assistant engineered with a dark titanium and electric cyan UI, structured voice command parsing, and modular intent routing.",
+      "techStack": ["Android Studio", "Kotlin", "Java", "Voice Processing", "REST APIs"],
+      "architecture": "Voice/Text Input Layer -> Android UI State Controller -> Command Router -> Local Action Executor / AI Backend API.",
+      "features": [
+        "Voice-first interaction workflow with responsive visual state feedback",
+        "Modular command routing architecture for device and AI tasks",
+        "Custom futuristic dark titanium and cyan interface theme",
+        "[EDITABLE PLACEHOLDER]: Add specific Android permissions and API integrations"
+      ],
+      "screenshots": [
+        "assets/images/projects/archon-placeholder.png"
+      ],
+      "githubUrl": "https://github.com/nithesh3-code",
+      "liveDemoUrl": "#",
+      "documentationPath": "projects/project-details/archon.md"
+    },
+    {
+      "id": "project-universal",
+      "name": "Project Universal — Native Android Application",
+      "category": "Android & AI",
+      "featured": true,
+      "status": "In Development",
+      "shortDescription": "Multimodal AI assistant mobile application engineered to help users interpret physical surroundings, documents, and voice queries through a unified interface.",
+      "problemStatement": "Users interacting with complex physical environments or dense documents need a unified mobile interface that seamlessly bridges camera input, voice, and AI reasoning.",
+      "proposedSolution": "A mobile-to-backend architecture pairing an Android client with a Python FastAPI and vector-enabled backend to process multimodal inputs in real time.",
+      "techStack": ["Android", "Kotlin", "Java", "Python", "FastAPI", "Multimodal AI"],
+      "architecture": "Android Client (Camera/Voice/Doc Input) -> FastAPI Gateway -> Multimodal LLM & Vector Search Pipeline -> Structured Client Response.",
+      "features": [
+        "Multimodal input support for visual, voice, and document queries",
+        "Clean REST API communication between mobile client and Python backend",
+        "Modular architecture designed for extensibility",
+        "[EDITABLE PLACEHOLDER]: Add specific mobile modules and deployment details"
+      ],
+      "screenshots": [
+        "assets/images/projects/project-universal-placeholder.png"
+      ],
+      "githubUrl": "https://github.com/nithesh3-code",
+      "liveDemoUrl": "#",
+      "documentationPath": "projects/project-details/project-universal.md"
+    },
+    {
+      "id": "friday-ai",
+      "name": "FridayAI",
+      "category": "AI & ML",
+      "featured": false,
+      "status": "Prototype",
+      "shortDescription": "Personal AI assistant and automation experiment exploring conversational task execution, developer productivity workflows, and modular LLM integration.",
+      "problemStatement": "Developers perform repetitive query and automation tasks across multiple tools without a centralized, programmable assistant layer.",
+      "proposedSolution": "A Python-based modular AI assistant capable of processing natural language commands, invoking local utility functions, and interfacing with language models.",
+      "techStack": ["Python", "LLMs", "NLP", "REST APIs"],
+      "architecture": "User Command Input -> Intent Classifier / Prompt Router -> Tool Execution Module -> Response Formatter.",
+      "features": [
+        "Extensible command and plugin structure in Python",
+        "Natural language query handling and context management",
+        "[EDITABLE PLACEHOLDER]: Add specific FridayAI modules and capabilities"
+      ],
+      "screenshots": [
+        "assets/images/projects/friday-ai-placeholder.png"
+      ],
+      "githubUrl": "https://github.com/nithesh3-code",
+      "liveDemoUrl": "#",
+      "documentationPath": "projects/project-details/friday-ai.md"
+    },
+    {
+      "id": "smart-governance-compliance",
+      "name": "Smart Governance and Compliance Monitoring System",
+      "category": "Backend & Governance",
+      "featured": false,
+      "status": "Architecture & Prototype",
+      "shortDescription": "Automated governance and policy compliance tracking system designed to evaluate operational data and workflows against regulatory rules.",
+      "problemStatement": "Manual compliance auditing across digital workflows is error-prone, slow, and lacks real-time visibility into policy violations.",
+      "proposedSolution": "A structured backend monitoring system that ingests operational records, evaluates them against configurable compliance rules, and generates audit reports.",
+      "techStack": ["Python", "FastAPI", "REST APIs", "Data Analysis", "Machine Learning"],
+      "architecture": "Data Ingestion API -> Rule & Anomaly Evaluation Engine -> Compliance Audit Logger -> Reporting Interface.",
+      "features": [
+        "Automated rule checking and compliance status classification",
+        "Structured API endpoints for audit log retrieval",
+        "[EDITABLE PLACEHOLDER]: Add specific governance domain rules and dataset details"
+      ],
+      "screenshots": [
+        "assets/images/projects/smart-governance-placeholder.png"
+      ],
+      "githubUrl": "https://github.com/nithesh3-code",
+      "liveDemoUrl": "#",
+      "documentationPath": "projects/project-details/smart-governance.md"
+    },
+    {
+      "id": "smart-feed-guard",
+      "name": "SmartFeedGuard — AI-Based Feed Quality Assessment",
+      "category": "AI & ML",
+      "featured": true,
+      "status": "Prototype / Research Build",
+      "shortDescription": "AI-driven assessment system engineered to analyze, classify, and validate feed quality using machine learning and data analysis pipelines.",
+      "problemStatement": "Assessing quality and detecting anomalies or low-quality inputs across continuous feeds requires automated, objective evaluation.",
+      "proposedSolution": "An AI-based classification and quality scoring pipeline using Python and machine learning libraries to inspect input attributes and output quality grades.",
+      "techStack": ["Python", "Machine Learning", "Scikit-learn", "Pandas", "NumPy", "FastAPI"],
+      "architecture": "Input Feed Data -> Feature Extraction & Preprocessing (Pandas/NumPy) -> ML Quality Classifier -> Quality Assessment Output.",
+      "features": [
+        "Automated feature preprocessing and quality classification pipeline",
+        "Data-driven scoring and anomaly flagging",
+        "[EDITABLE PLACEHOLDER]: Customize specific feed domain parameters and evaluation metrics"
+      ],
+      "screenshots": [
+        "assets/images/projects/smart-feed-guard-placeholder.png"
+      ],
+      "githubUrl": "https://github.com/nithesh3-code",
+      "liveDemoUrl": "#",
+      "documentationPath": "projects/project-details/smart-feed-guard.md"
+    }
+  ]
+}

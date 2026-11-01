@@ -1,0 +1,79 @@
+{
+  "entries": [
+    {
+      "id": "res-frisian-lang-spec",
+      "title": "Frisian / Farisan: Declarative Security Policy Architecture in Programming Languages",
+      "category": "Programming Languages",
+      "secondaryCategory": "API Security",
+      "type": "Research Specification & Architecture Note",
+      "status": "Working Draft / Active Research",
+      "date": "2026",
+      "summary": "Investigates embedding API security constraints, capability boundaries, and static policy verification directly into programming language grammar and AST analysis.",
+      "tags": [
+        "Programming Languages",
+        "API Security",
+        "Compiler Design",
+        "Cybersecurity",
+        "Frisian/Farisan"
+      ],
+      "documentPath": "research/notes/frisian-language-architecture.md",
+      "pdfPath": ""
+    },
+    {
+      "id": "res-local-rag-grounding",
+      "title": "Context Grounding & Chunking Strategies in Local Retrieval-Augmented Generation (RAG)",
+      "category": "Artificial Intelligence",
+      "secondaryCategory": "Machine Learning",
+      "type": "Experimental Technical Note",
+      "status": "Research Note",
+      "date": "2026",
+      "summary": "Explores document chunking granularity, vector retrieval top-k thresholds, and prompt framing techniques to minimize hallucinations in local RAG pipelines.",
+      "tags": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "RAG",
+        "LLMs",
+        "Vector Databases"
+      ],
+      "documentPath": "research/notes/rag-grounding-experiments.md",
+      "pdfPath": ""
+    },
+    {
+      "id": "res-fastapi-security-patterns",
+      "title": "REST API Security Contracts and Schema Validation Patterns in FastAPI Microservices",
+      "category": "Backend Engineering",
+      "secondaryCategory": "Cybersecurity",
+      "type": "Architecture Documentation",
+      "status": "Published Note",
+      "date": "2026",
+      "summary": "Documents structural patterns for input sanitization, strict Pydantic schema validation, and defensive API design for AI-backed web services.",
+      "tags": [
+        "Backend Engineering",
+        "API Security",
+        "Cybersecurity",
+        "FastAPI",
+        "REST APIs"
+      ],
+      "documentPath": "research/notes/fastapi-security-patterns.md",
+      "pdfPath": ""
+    },
+    {
+      "id": "res-multimodal-mobile-agents",
+      "title": "System Architecture for Voice-First & Multimodal AI Assistants on Android",
+      "category": "Software Architecture",
+      "secondaryCategory": "Deep Learning",
+      "type": "System Architecture Blueprint",
+      "status": "Active Research",
+      "date": "2026",
+      "summary": "Architectural study on low-latency command routing, state transitions, and backend orchestration for native Android AI assistants (ARCHON & Project Universal).",
+      "tags": [
+        "Software Architecture",
+        "Deep Learning",
+        "Android",
+        "AI Infrastructure"
+      ],
+      "documentPath": "research/diagrams/android-ai-architecture.md",
+      "pdfPath": ""
+    }
+  ]
+}

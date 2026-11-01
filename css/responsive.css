@@ -1,0 +1,158 @@
+/* ==========================================================================
+   NITHESH.DEV — RESPONSIVE BREAKPOINTS & PRINT STYLES (responsive.css)
+   ========================================================================== */
+
+/* Large Tablets & Compact Laptops (max-width: 1080px) */
+@media (max-width: 1080px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid,
+  .systems-grid,
+  .skills-matrix-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid,
+  .spec-grid,
+  .lang-doc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sticky-panel {
+    position: static;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Tablets & Mobile Navigation Drawer (max-width: 900px) */
+@media (max-width: 900px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    background-color: #070B12;
+    border-bottom: 1px solid var(--border-strong);
+    padding: 1rem 1.5rem;
+    display: none;
+    box-shadow: 0 20px 36px rgba(0, 0, 0, 0.65);
+  }
+
+  .main-nav.nav-open {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-link.nav-cta {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .split-section,
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Devices (max-width: 640px) */
+@media (max-width: 640px) {
+  .system-bar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .sys-meta {
+    display: none;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .hero-section {
+    padding: 3.5rem 0 3rem;
+  }
+
+  .pillars-grid,
+  .projects-grid,
+  .systems-grid,
+  .skills-matrix-grid,
+  .focus-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header-flex,
+  .resume-hero-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-sheet {
+    padding: 1.5rem;
+  }
+
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Print Stylesheet (for ATS / Resume Page Printing) */
+@media print {
+  .system-bar,
+  .site-header,
+  .resume-actions,
+  .back-to-top,
+  .site-footer {
+    display: none !important;
+  }
+
+  body,
+  .resume-sheet {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  p, span, li, h1, h2, h3, h4 {
+    color: #000000 !important;
+  }
+}

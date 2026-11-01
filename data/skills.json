@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "id": "01 // LANGUAGES",
+      "category": "Programming",
+      "description": "Primary languages used for backend services, AI scripting, and native Android development.",
+      "items": ["Python", "Java", "Kotlin"]
+    },
+    {
+      "id": "02 // INTELLIGENCE",
+      "category": "AI / ML",
+      "description": "Core artificial intelligence and machine learning paradigms applied in research and project builds.",
+      "items": ["Machine Learning", "Deep Learning", "NLP", "LLMs", "RAG"]
+    },
+    {
+      "id": "03 // SERVICES & APIS",
+      "category": "Backend",
+      "description": "Designing and building asynchronous API endpoints, web services, and data contracts.",
+      "items": ["FastAPI", "REST APIs", "HTTP Fundamentals"]
+    },
+    {
+      "id": "04 // ANALYTICS & COMPUTATION",
+      "category": "Data",
+      "description": "Python scientific computing, tabular manipulation, visualization, and classical ML toolkits.",
+      "items": ["NumPy", "Pandas", "Matplotlib", "Scikit-learn"]
+    },
+    {
+      "id": "05 // ENVIRONMENT & WORKFLOW",
+      "category": "Tools",
+      "description": "Version control, integrated development environments, and mobile build systems.",
+      "items": ["Git", "GitHub", "VS Code", "Android Studio"]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Independent Research Laboratory of Mamidi Nitesh — AI, Machine Learning, Deep Learning, Cybersecurity, Backend Engineering, API Security, and Programming Languages.">
+  <title>Research Lab | NITHESH.DEV — Independent Technical Research</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="bg-grid-pattern">
+
+  <div class="system-bar">
+    <div class="container system-bar-inner">
+      <div class="sys-status">
+        <span class="status-dot pulse"></span>
+        <span class="mono-text">SYS.NODE // NITHESH.DEV [RESEARCH_LABORATORY]</span>
+      </div>
+      <div class="sys-meta mono-text">
+        <span>INDEX: data/research.json</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-bracket">[</span>NITHESH<span class="logo-accent">.DEV</span><span class="logo-bracket">]</span>
+      </a>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="about.html" class="nav-link">ABOUT</a></li>
+          <li><a href="resume.html" class="nav-link">RESUME</a></li>
+          <li><a href="projects.html" class="nav-link">PROJECTS</a></li>
+          <li><a href="research.html" class="nav-link active">RESEARCH LAB</a></li>
+          <li><a href="ai-systems.html" class="nav-link">AI &amp; SYSTEMS</a></li>
+          <li><a href="language-development.html" class="nav-link">LANGUAGE DEV</a></li>
+          <li><a href="skills.html" class="nav-link">SKILLS</a></li>
+          <li><a href="contact.html" class="nav-link nav-cta">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag mono-text">// INDEPENDENT RESEARCH LABORATORY</span>
+        <h1 class="page-title">Technical Research &amp; Experiment Archive</h1>
+        <p class="page-subtitle">A structured repository for working papers, technical documentation, architecture diagrams, experimental logs, and future research concepts.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- Search & Category Filter Controls -->
+        <div class="controls-bar">
+          <div class="search-input-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <input type="search" id="research-search-input" class="search-input" placeholder="Search research papers, notes, tags, or topics..." aria-label="Search research">
+          </div>
+
+          <div class="filter-group" id="research-category-filters" role="group" aria-label="Filter research by domain">
+            <button class="filter-btn active" data-category="all">All Domains</button>
+            <button class="filter-btn" data-category="Artificial Intelligence">Artificial Intelligence</button>
+            <button class="filter-btn" data-category="Machine Learning">Machine Learning</button>
+            <button class="filter-btn" data-category="Deep Learning">Deep Learning</button>
+            <button class="filter-btn" data-category="Cybersecurity">Cybersecurity</button>
+            <button class="filter-btn" data-category="Backend Engineering">Backend Engineering</button>
+            <button class="filter-btn" data-category="API Security">API Security</button>
+            <button class="filter-btn" data-category="Programming Languages">Programming Languages</button>
+            <button class="filter-btn" data-category="Software Architecture">Software Architecture</button>
+          </div>
+        </div>
+
+        <div class="results-meta mono-text" id="research-count-meta">
+          Loading research index...
+        </div>
+
+        <!-- Research Cards Grid -->
+        <div id="research-library-grid" class="research-grid">
+          <div class="loading-state mono-text">Fetching research catalog from data/research.json...</div>
+        </div>
+
+        <!-- Future Research Ideas & Static Repository Workflow Guide -->
+        <div class="split-section mt-48">
+          <div class="panel-card">
+            <span class="section-tag mono-text">// INCUBATOR</span>
+            <h3 class="panel-title">Future Research Directions</h3>
+            <ul class="bullet-list">
+              <li><strong>Declarative API Security Policies:</strong> Investigating compile-time verification of endpoint authentication and rate-limit schemas inside Frisian/Farisan.</li>
+              <li><strong>Low-Latency Local RAG Indexing:</strong> Evaluating lightweight vector quantization strategies for resource-constrained environments.</li>
+              <li><strong>On-Device Agent Sandboxing:</strong> Designing permission boundaries for voice-driven Android AI assistants.</li>
+              <li><strong>[Editable Research Topic]:</strong> Add new hypotheses and experimental queues in <code>research.html</code> or <code>data/research.json</code>.</li>
+            </ul>
+          </div>
+
+          <div class="panel-card">
+            <span class="section-tag mono-text">// STATIC ARCHIVE PROTOCOL</span>
+            <h3 class="panel-title">How to Publish New Research Documents (Netlify Static Architecture)</h3>
+            <p class="small-text">
+              Because <strong>NITHESH.DEV</strong> is a zero-backend static platform hosted on Netlify, browser file inputs do not permanently write to the server. To publish new PDFs, notes, or diagrams permanently:
+            </p>
+            <ol class="numbered-list mono-text small-text">
+              <li>Place your PDF paper in <code>research/papers/</code>, markdown/HTML notes in <code>research/notes/</code>, or diagrams in <code>research/diagrams/</code>.</li>
+              <li>Open <code>data/research.json</code> in VS Code and append a new JSON entry referencing the file path.</li>
+              <li>Run <code>git add . && git commit -m "Add research paper" && git push</code>. Netlify will automatically deploy the updated library.</li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom mono-text">
+      <span>&copy; <span id="current-year">2026</span> Mamidi Nitesh // NITHESH.DEV</span>
+      <span>RESEARCH INDEX: <code>data/research.json</code></span>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/research.js"></script>
+</body>
+</html>

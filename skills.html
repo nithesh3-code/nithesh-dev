@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Categorized Technical Skills of Mamidi Nitesh — Programming (Python, Java, Kotlin), AI/ML, Backend (FastAPI, REST APIs), Data Science, and Developer Tools.">
+  <title>Technical Skills | NITHESH.DEV — Mamidi Nitesh</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="bg-grid-pattern">
+
+  <div class="system-bar">
+    <div class="container system-bar-inner">
+      <div class="sys-status">
+        <span class="status-dot pulse"></span>
+        <span class="mono-text">SYS.NODE // NITHESH.DEV [TECHNICAL_CAPABILITIES]</span>
+      </div>
+      <div class="sys-meta mono-text">
+        <span>DATA SOURCE: data/skills.json</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-bracket">[</span>NITHESH<span class="logo-accent">.DEV</span><span class="logo-bracket">]</span>
+      </a>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="about.html" class="nav-link">ABOUT</a></li>
+          <li><a href="resume.html" class="nav-link">RESUME</a></li>
+          <li><a href="projects.html" class="nav-link">PROJECTS</a></li>
+          <li><a href="research.html" class="nav-link">RESEARCH LAB</a></li>
+          <li><a href="ai-systems.html" class="nav-link">AI &amp; SYSTEMS</a></li>
+          <li><a href="language-development.html" class="nav-link">LANGUAGE DEV</a></li>
+          <li><a href="skills.html" class="nav-link active">SKILLS</a></li>
+          <li><a href="contact.html" class="nav-link nav-cta">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag mono-text">// CAPABILITY MATRIX</span>
+        <h1 class="page-title">Technical Skills &amp; Stack</h1>
+        <p class="page-subtitle">Categorized overview of programming languages, AI/ML domains, backend frameworks, data libraries, and engineering tools. No arbitrary percentage bars—focused on practical application.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Dynamically populated from data/skills.json by js/main.js (with static fallback) -->
+        <div id="skills-matrix-container" class="skills-matrix-grid">
+
+          <article class="panel-card">
+            <span class="mono-text cyan-text">01 // LANGUAGES</span>
+            <h2 class="panel-title">Programming</h2>
+            <p class="small-text">Primary languages used for backend services, AI scripting, and native Android development.</p>
+            <div class="skill-tags-wrap">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">Kotlin</span>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <span class="mono-text cyan-text">02 // INTELLIGENCE</span>
+            <h2 class="panel-title">AI / ML</h2>
+            <p class="small-text">Core artificial intelligence and machine learning paradigms applied in research and project builds.</p>
+            <div class="skill-tags-wrap">
+              <span class="skill-badge">Machine Learning</span>
+              <span class="skill-badge">Deep Learning</span>
+              <span class="skill-badge">NLP</span>
+              <span class="skill-badge">LLMs</span>
+              <span class="skill-badge">RAG</span>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <span class="mono-text cyan-text">03 // SERVICES &amp; APIS</span>
+            <h2 class="panel-title">Backend</h2>
+            <p class="small-text">Designing and building asynchronous API endpoints, web services, and data contracts.</p>
+            <div class="skill-tags-wrap">
+              <span class="skill-badge">FastAPI</span>
+              <span class="skill-badge">REST APIs</span>
+              <span class="skill-badge">HTTP Fundamentals</span>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <span class="mono-text cyan-text">04 // ANALYTICS &amp; COMPUTATION</span>
+            <h2 class="panel-title">Data</h2>
+            <p class="small-text">Python scientific computing, tabular manipulation, visualization, and classical ML toolkits.</p>
+            <div class="skill-tags-wrap">
+              <span class="skill-badge">NumPy</span>
+              <span class="skill-badge">Pandas</span>
+              <span class="skill-badge">Matplotlib</span>
+              <span class="skill-badge">Scikit-learn</span>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <span class="mono-text cyan-text">05 // ENVIRONMENT &amp; WORKFLOW</span>
+            <h2 class="panel-title">Tools</h2>
+            <p class="small-text">Version control, integrated development environments, and mobile build systems.</p>
+            <div class="skill-tags-wrap">
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">VS Code</span>
+              <span class="skill-badge">Android Studio</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="panel-card mt-32">
+          <h3 class="mono-text panel-subtitle">// UPDATING SKILLS</h3>
+          <p class="small-text">
+            You can update or expand these skill categories at any time by editing <code>data/skills.json</code> (which dynamically renders into this grid) or directly inside <code>skills.html</code>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom mono-text">
+      <span>&copy; <span id="current-year">2026</span> Mamidi Nitesh // NITHESH.DEV</span>
+      <span>EDIT SKILLS IN: <code>data/skills.json</code></span>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
